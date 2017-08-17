@@ -1,6 +1,8 @@
 # webmo-library-processing
 
-[http://webmo.io](http://webmo.io)
+Webmoについて : [http://webmo.io](http://webmo.io)
+
+リファレンス : [https://progfay.github.io/docs/webmo-library-processing/](https://progfay.github.io/docs/webmo-library-processing/)
 
 ```
 cd [sketch location]/libraries
