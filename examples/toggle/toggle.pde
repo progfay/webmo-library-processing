@@ -5,17 +5,24 @@ boolean isRotating = false;
 
 void setup() {
   // webmo.localに接続
-  webmo = new Webmo();  
+  webmo = new Webmo();
 }
 
 void draw() {
 }
 
 void mousePressed() {
-  if(!isRotating) {
+  if (!isRotating) {
     webmo.rotate(500);
   } else {
     webmo.stop(false);
   }
   isRotating = !isRotating;
+}
+
+void exit() {
+  if (isRotating) {
+    webmo.stop(false);
+  }
+  super.exit();
 }
